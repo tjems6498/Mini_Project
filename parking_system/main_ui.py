@@ -217,7 +217,7 @@ class AppWindow(tkinter.Frame):
         entryTime = self.information[number]
         time = (exitTime - entryTime).seconds
         pay = time * 1  # 초당 1원
-        self.exitLabel['text'] = f"{number} 차량의 주차금액: {pay}원"
+        self.exitLabel['text'] = f"최근 출차량\n{number} 차량의 주차금액: {pay}원"
 
         del self.information[number]
         self.count()
